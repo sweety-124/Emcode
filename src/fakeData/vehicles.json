@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Mercedes Truck",
+    "lat": 25.190225,
+    "lang": 55.296775,
+    "status":"moving",
+    "color":"green"
+  },
+  {
+    "id": 2,
+    "name": "WagonR",
+    "lat": 25.188838,
+    "lang": 55.296321,
+    "status":"ideal",
+    "color":"yellow"
+  },
+  {
+    "id": 4,
+    "name": "Up80 CJ 708819",
+    "lat": 25.1896565,
+    "lang": 55.298044,
+    "status":"moving",
+     "color":"green"
+  },
+    {
+    "id": 5,
+    "name": "Mercedes Truck",
+    "lat": 25.190512,
+    "lang": 55.297443,
+    "status":"ideal",
+     "color":"yellow"
+
+  },
+    {
+    "id": 6,
+    "name": "Up11T CJ 708819",
+    "lat": 25.188957,
+    "lang": 55.297930,
+    "status":"stop",
+     "color":"red"
+  },
+    {
+    "id": 7,
+    "name": "WagonR",
+    "lat": 25.188860,
+    "lang": 55.298426,
+    "status":"no-available-data",
+     "color":"grey"
+  },
+    {
+    "id": 8,
+    "name": "Up80 CJ 708819",
+    "lat": 25.190499,
+    "lang": 55.295593,
+    "status":"having-some-event",
+     "color":"blue"
+  }
+]

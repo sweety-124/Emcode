@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+ }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .list {
+      display: grid;
+ }
+}
+.item {
+  flex-basis: calc(33.3333% - 54px);
+  padding: 20px;
+  background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.item:hover{
+  transform: scale(1.05);
+ /* Apply scale transformation on hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.description {
+  font-size: 14px;
+  color: #000;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+ }
+  to {
+      transform: rotate(360deg);
+ }
+}
+/* ===============================ICONS STYLE =====================================================*/
+.edit-icon, .close-icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+/* Edit Icon */
+.edit-icon {
+  background-image: url('./images/edit.png');
+ /* Replace with your edit icon image path */
+}
+/* Close Icon */
+.close-icon {
+  background-image: url('./images/delete.png');
+ /* Replace with your close icon image path */
+}
+/* Icon Hover Effect */
+.edit-icon:hover, .close-icon:hover {
+  opacity: 0.8;
+}
+/* Icon Container */
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ===================================================Custom Button=========================================================== */
+/* Button.css */
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.custom-button:hover {
+  background-color: #0056b3;
+}
+/* ===================================================Header css=================================================================== */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  margin: 0;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 16px;
+}
+.header .nav a:hover {
+  text-decoration: underline;
+}
+/* ============================================POst form============================================================= */
+.post-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+.post-form-input, .post-form-textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 6px;
+  border-bottom: 1px solid #5e2c2c;
+  font-size: 16px;
+}
+.post-form-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  width: 100px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.post-form-back {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.post-form-button:hover {
+  background-color: #0056b3;
+}
+/* ================================================Alert stylee================================================================= */
+.alert {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}

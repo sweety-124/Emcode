@@ -1,0 +1,131 @@
+.App {
+  display: flex;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+
+  font-style: normal;
+  font-weight: normal;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bullet-point {
+  margin-left: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.bullet-point:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.vehName{
+      text-align: initial;
+    margin-left: 6%;
+   font-size: 0.78rem;
+    font-family: "Montserrat", sans-serif;
+}
+.closeico{
+   display:none;
+    
+
+}
+@media only screen and (max-width: 770px ) {
+   .closeico{
+      width: 8%;
+    margin: 10px;
+    cursor: pointer;
+    display:inherit;
+    margin: 0 auto;
+}
+}
+.leaflet-left{
+ right: 10px!important;
+ left: auto !important;
+}
+.toggleButton{
+position: absolute;
+background-color : #d1cbcbc4;
+z-index: 999;
+left: 0;
+border: none;
+font-size: 15px;
+padding: 11px 6px 15px 6px;
+}
+.custom-marker {
+  background-color: #ff4136;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.leaflet-container {
+  width: 70vw;
+  height: 100vh;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  padding: 2em;
+  width: 30vw;
+}
+
+.sidebar h2,
+.sidebar p,
+.sidebar ul {
+  text-align: left;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar button {
+  width: 100%;
+  font-weight: bold;
+  padding: .8em 1em;
+}
